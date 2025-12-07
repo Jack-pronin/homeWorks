@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWorks</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header__container">
+        <a href="#" class="logo">
+            <img src="accets/images/homeWorks.png" alt="Logo" class="logo-img">
+        </a>
+    </div>
+</header>
+
+<section class="main">
+    <div class="container main__container">
+        <div class="main__title" id="main__title">
+            Get your free account
+        </div>
+        <div class="main__text">
+            Try homeWorks BUSINESS free for 15 days. Downgrade to Basic (Free Forever) anytime.
+        </div>
+        <form action="" method="post" class="main__form" id="form">
+            <label class="form__label">
+                Full Name
+                <input type="text" class="form__input" id="fullName" name="Full Name">
+                <div class="error-message" id="fullNameError"></div>
+            </label>
+            <label class="form__label">
+                Your username
+                <input type="text" class="form__input" id="userName" name="Username">
+                <div class="error-message" id="userNameError"></div>
+            </label>
+            <label class="form__label">
+                E-mail
+                <input type="text" class="form__input" name="E-mail" id="email">
+                <div class="error-message" id="emailError"></div>
+            </label>
+            <label class="form__label">
+                Password
+                <input type="password" class="form__input" name="Password" id="password">
+                <div class="error-message" id="passwordError"></div>
+            </label>
+            <label class="form__label">
+                Repeat Password
+                <input type="password" class="form__input" name="repeatPassword" id="confirmPassword">
+                <div class="error-message" id="confirmPasswordError"></div>
+            </label>
+            <label class="form__checkbox">
+                <input type="checkbox" name="agreement" value="true" class="form__checkbox-input" id="checkbox">Agree to our Terms of Service and Privacy Statement
+                <div class="error-message" id="checkboxError"></div>
+            </label>
+            <div class="form__button">
+                <button type="submit" class="btn" id="mainButton">Sign Up</button>
+            </div>
+            <div class="main__account">
+                <a href="#" class="main__account-link">already have an account?</a>
+            </div>
+        </form>
+        <div class="main__img">
+            <img src="accets/images/rocket.png" alt="Rocket" class="main__img-rocket">
+        </div>
+    </div>
+</section>
+
+<div class="popup" id="popup">
+    <div class="popup__content">
+        <div class="popup__text">
+            На вашу почту выслана ссылка, перейдите по ней, чтобы завершить регистрацию
+        </div>
+        <button class="btn popup__btn" id="popup__button">ОК</button>
+    </div>
+</div>
+<script src="src/scripts/script.js"></script>
+</body>
+</html>
